@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        img{
+            height: 75vh;
+            width: 100vw;
+        }
+
+        h1 {
+            position: absolute;
+            top: 65vh;
+            left: 10px;
+            color: white;
+        }
+
+        #heading1 {
+            position: relative;
+            left: 100px;
+            font-size: 2rem;
+            top: 5px;
+        }
+
+        #heading2{
+            position: relative;
+            left: 100px;
+            font-size: 2rem;
+            top: 10px;
+        
+        }
+
+        .content #p1 {
+            font-size: 1.5rem;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 30px;
+        }
+
+        .content #p2 {
+            font-size: 1.5rem;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 30px;
+        }
+
+        .content #p3{
+            font-size: 1.5rem;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 30px;
+        }
+
+        #heading3 {
+            position: relative;
+            left: 100px;
+            font-size: 2rem;
+            top: 5px;
+        }
+
+        
+        .gallery img{
+            height: 250px;
+            width: 250px;
+        }
+
+        .gallery{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            position: relative;
+            top: 10px;
+        }
+
+        @media (max-width:1600px) and (min-width:1000px) {
+            .gallery{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+        }
+
+        @media (max-width:1000px) and (min-width:800px) {
+            .gallery{
+                display: grid;
+                grid-template-columns: auto auto auto ;
+            }
+        }
+        @media (max-width:800px) and (min-width:400px) {
+            .gallery{
+                display: grid;
+                grid-template-columns: auto auto ;
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width:400px)  {
+            .gallery{
+                display: grid;
+                grid-template-columns: auto ;
+                justify-content: center;
+            }
+        }
+
+        .footer{
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainimage">
+        <img src=""
+            alt="">
+        <h1></h1>
+    </div>
+
+    <div class="content">
+        <h2 id="heading1"></h2>
+        <p id="p1"></p>
+
+        <p id="p2"></p>
+        <h2 id="heading2"></h2>
+        <p id="p3"></p>
+    </div>
+
+    <div class="gallery">
+        <h2 id="heading3">GALLERY</h2>
+        <img id="img1" src="" alt="coming soon">
+        <img id="img2" src="" alt="coming soon">
+        <img id="img3" src="" alt="coming soon">
+        <img id="img4" src="" alt="coming soon">
+        <img id="img5" src="" alt="coming soon">
+        <img id="img6" src="" alt="coming soon">
+        <img id="img7" src="" alt="coming soon"> 
+        <img id="img8" src="" alt="coming soon"> 
+        <img id="img9" src="" alt="comming soon" >
+        <img id="img10" src="" alt="comming soon" >
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+
+</html>

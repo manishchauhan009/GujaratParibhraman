@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPvadodararesponsive</title>
+    <link rel="stylesheet" href="../Vadodara Hotels/hotel.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/GPCities.css">
+    <style>
+        .slide-1 {
+            background: url('https://www.gujarattourism.com/content/dam/gujrattourism/images/flora--fauna/sayaji-baug/Sayaji-Baug-Banner.jpg');
+            background-size: cover;
+        }
+
+        .slide-2 {
+            background: url('https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/laxmi-vilas-palace/Laxmi-Vilas-Palace-Banner1.jpg');
+            background-size: cover;
+        }
+
+        .slide-3 {
+            background: url('https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/kirti-mandir/Kirti-Mandir-Banner.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fullscreen">
+        <!-- /* ===========================================
+                                              CODE FOR MAIN_SLIDER
+                                 ======================================= */ -->
+        <div class="container">
+            <div class="arrow l" onclick="prev()">
+                <img src="https://img.icons8.com/ios-filled/512/less-than-2.png" alt="l">
+            </div>
+
+            <div class="slide slide-1">
+                <div class="caption">
+                    <h3>VADODARA</h3>
+                    <p>Sayaji Baug</p>
+                </div>
+            </div>
+
+            <div class="slide slide-2">
+                <div class="caption">
+                    <h3>VADODARA</h3>
+                    <p>Laxmi Vilas Palace</p>
+                </div>
+            </div>
+
+            <div class="slide slide-3">
+                <div class="caption">
+                    <h3>VADODARA</h3>
+                    <p>Kirti Mandir </p>
+                </div>
+            </div>
+            <div class="arrow r" onclick="next()">
+                <img src="https://img.icons8.com/ios-filled/2x/more-than-2.png" alt="r">
+            </div>
+        </div>
+        <!-- ======================================== 
+                                     Introduction to kutch  
+                            ========================================  -->
+        <h1>Introduction</h1>
+        <div class="content">
+            <p>
+            <table>Vadodara, also called Baroda, city, east-central Gujarat state, west-central India. It is located on
+                the
+                Vishvamitra River about 60 miles (100 km) southeast of Ahmadabad.
+                The earliest record of the city is in a grant or charter of 812 CE that mentions it as Vadapadraka, a
+                hamlet
+                attached to the town of Ankottaka. In the 10th century Vadapadraka displaced Ankottaka as the urban
+                centre.
+                It seems also to have been known as Chandanavati, named for Raja Chandan of the Dor Rajputs, who wrested
+                it
+                from the Jainas. The city underwent periodic renamings: Varavati, Vatpatraka, Baroda, and, in 1971,
+                Vadodara.
+                </p>
+            </table>
+        </div>
+        <!-- ======================================== 
+                                     code for location 
+                            ========================================  -->
+
+        <section class="services-container">
+            <!-- <h1 class="h-Primary center">Our Services</h1> -->
+            <div id="services">
+                <div class="box">
+                    <img src="https://pic.onlinewebfonts.com/svg/img_522063.png" alt="">
+                    <h2 class="h-Secondary"></h2>
+                    <h2 class="h-Secondary center">Use Road</h2>
+                    <p class="center">Travelling through road is the best way to reach Vadodara as the highways and
+                        byways
+                        are beautiful and well maintained. One can hire a private cab from the nearby town or can opt
+                        for
+                        Gujarat State Road Transport Corporation (GSRTC) webpage buses to reach Vadodara.
+                    </p>
+
+                </div>
+
+                <div class="box">
+                    <img src="https://pngimg.com/uploads/trian/small/trian_PNG16660.png" alt="">
+                    <h2 class="h-Secondary"></h2>
+                    <h2 class="h-Secondary center">Use Train</h2>
+                    <p class="center">Vadodara Junction Railway Station (Indian Railways station code: BRC) is the
+                        busiest
+                        railway station in Gujarat. High-speed trains like Shatabdi and Rajdhani link Vadodara with
+                        different parts of India.</p>
+
+                </div>
+
+
+                <div class="box">
+                    <img src="https://hdclipartall.com/images/airplane-clipart-transparent-air-plane-clipart-800_416.png"
+                        alt="">
+                    <h2 class="h-Secondary"></h2>
+                    <h2 class="h-Secondary center">Use Airplane</h2>
+                    <p class="center">Vadodara is served by a domestic airport namely Civil Airport Harni. Airlines like
+                        Air
+                        India, Jet Airways and Indigo, operate on a daily basis from the airports. Plenty of options
+                        like
+                        taxi, bus, shuttle and auto services are available from the airport.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- /* ===========================================
+                                              CODE FOR PICTURE_SLIDER
+                                 ======================================= */ -->
+        <div class="wapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/kirti-mandir/Kirti-Mandir-1.jpg"
+                    alt="img" draggable="false">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/flora--fauna/sayaji-baug/Sayaji-Baug-1.jpg"
+                    alt="img" draggable="false">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/laxmi-vilas-palace/Laxmi-Vilas-Palace2.jpg"
+                    alt="img" draggable="false">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/museums/maharaja-fatehsingh-museum/gallery/Maharaja%20Fatehsingh%20Museum%20(1).jpg"
+                    alt="img" draggable="false">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/destinations/vadodara/sursagar-lake/sursagar-lake.jpg"
+                    alt="img" draggable="false">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/pavagadh-kalika-mata-temple/pavagadhtemplefrontview.jpg"
+                    alt="img" draggable="false">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/museums/baroda-museum-and-picture-gallery/gallery/Baroda-Museum-And-Picture-Gallery-(1).jpg"
+                    alt="img" draggable="false">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/museums/maharaja-fatehsingh-museum/gallery/Maharaja%20Fatehsingh%20Museum%20(6).jpg"
+                    alt="img" draggable="false">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/laxmi-vilas-palace/gallery/Laxmi%20Vilas%20Palace8.jpg"
+                    alt="img" draggable="false">
+
+
+
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+
+        </div>
+
+        <!-- /* ===========================================
+                                              CODE FOR POPULAR PLACES
+                                 ======================================= */ -->
+        <div class="row">
+            <div class="card"
+                style="background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/laxmi-vilas-palace/gallery/Laxmi%20Vilas%20Palace5.jpg);">
+                <div class="contentWrapper">
+                    <div class="content_1">
+                        <p>
+                        <h3>Laxmi Vilas Palace</h3>
+
+                        The palace was built by Maharaja Sayajirao Gaekwad III in 1890, who ruled the Baroda State.
+                        Major
+                        Charles Mant was credited to be the main architect of the palace.Still the residence of
+                        Vadodara’s royal family, Laxmi Vilas was built in full-throttle 19th-century Indo-Saracenic
+                        flourish at a cost of Rs 6 million. </p>
+                        <a href="GPVadodaraLaxmivilaspalace.html">See More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/flora--fauna/sayaji-baug/Sayaji-Baug-1.jpg);">
+                <div class="contentWrapper">
+                    <div class="content_1">
+                        <p style="margin-top:1rem;">
+                        <h3>Sayaji Baug</h3>
+                        Sayaji Baug, also known as Kamati Baug, is a massive green square in the middle of the town,
+                        which houses the famous Museum and Picture Gallery, and other kid-friendly sights like an
+                        aquarium, zoo, health museum, planetarium, a toy train and a flowerbed clock. The Baroda
+                        Museum
+                        & Picture Gallery is home to a diverse collection of art, much of it gathered by Maharaja
+                        Sayajirao III. </p>
+                        <a href="GPVadodaraSayajiBaug.html">See More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/flora--fauna/sursagar-lake/Sursagar-Lake-1.jpg);">
+                <div class="contentWrapper">
+                    <div class="content_1">
+                        <p>
+                        <h3>Sursagar Lake</h3>
+                        Built in the 18th century, the Sursagar is also known as Chand Talao. It marks the center of
+                        the
+                        city of Vadodara, surrounded by the thrum of commerce in the Old City. A tall statue of Lord
+                        Shiva, which is lit up on Maha Shivratri, works as a veritable beacon over the lake. The
+                        perennial lake has several gates at the bottom that are opened in case of overflooding. </p>
+                        <a href="GPvadodaraSursagarlake.html">See More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/pavagadh-kalika-mata-temple/pavagadhnew8.jpeg);">
+                <div class="contentWrapper">
+                    <div class="content_1">
+                        <p>
+                        <h3>Pavagadh Hills</h3>
+                        At the summit of Pavagadh hill, 800 m above sea level, is the temple to Mother Kali, which is
+                        the
+                        oldest in the area, dating from the 10th-11th centuries. Hindu pilgrims were coming to visit
+                        this temple from long before the development of Champaner as a major city, and they
+                        continued
+                        for hundreds of years after its decline, right up to the present day.</p>
+                        <a href="GPvadodaraPavagadh.html">See More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="hotel">
+            <h1 style="text-align: center; margin-top: 20px;">Hotels</h1>
+            <div class="wrapper">
+                <div class="image i1">
+                    <a href="https://www.booking.com/hotel/in/surya-palace.en-gb.html#hotelTmpl"></a>
+                </div>
+                <div class="details">
+                    <h2>Welcome Hotel by ITC</h2>
+                    <p>1 Night</p>
+                </div>
+
+                <h1><a href="https://www.booking.com/hotel/in/surya-palace.en-gb.html#hotelTmpl"
+                        style="text-decoration: none;color: black;" target="_blank">₹5988</a></h1>
+            </div>
+
+            <div class="wrapper">
+                <div class="image i2"></div>
+                <div class="details">
+                    <h2>Grand Mercure Hotel</h2>
+                    <p>1 Night</p>
+                </div>
+
+                <h1>
+                    <a href="https://www.booking.com/hotel/in/surya-palace.en-gb.html#hotelTmpl"
+                        style="text-decoration: none;color: black;" target="_blank">₹3465</a>
+                </h1>
+            </div>
+
+            <div class="wrapper">
+                <div class="image i3"></div>
+                <div class="details">
+                    <h2>7 Apple Hotel</h2>
+                    <p>1 Night</p>
+                </div>
+                <h1>
+                    <a href="https://www.booking.com/hotel/in/welcomhotel-vadodara.en-gb.html#hotelTmpl"
+                        style="text-decoration: none;color: black;" target="_blank">₹1560</a>
+                </h1>
+            </div>
+        </section>
+        <section class="Restaurant">
+            <h1 style="text-align: center; margin-top:40px;">Restaurants</h1>
+            <div class="wrapper">
+                <div class="image r1">
+                </div>
+                <div class="details">
+                    <h2>Shree Harikrushana</h2>
+                </div>
+                <h1>
+                    <a href="https://www.zomato.com/vadodara/hare-krishna-fast-food-karelibaug"
+                        style="text-decoration: none;">Order Online</a>
+                </h1>
+            </div>
+
+            <div class="wrapper">
+                <div class="image r2"></div>
+                <div class="details">
+                    <h2>The Grand Thakar</h2>
+                </div>
+                <h1>
+                    <a href="https://www.zomato.com/vadodara/the-grand-thakar-alkapuri"
+                        style="text-decoration: none;">Order Online</a>
+                </h1>
+
+            </div>
+
+            <div class="wrapper">
+                <div class="image r3"></div>
+                <div class="details">
+                    <h2>My Restaurant</h2>
+                </div>
+                <h1>
+                    <a href="https://www.zomato.com/vadodara/my-restaurant-diwalipura/menu?category=1"
+                        style="text-decoration: none;">Order Online</a>
+                </h1>
+            </div>
+        </section>
+
+        <!-- /* ===========================================
+                                              CODE FOR FOOTER
+            ======================================= */ -->
+
+
+    </div>
+
+
+
+
+    <!-- ======================================== 
+                                    Our JavaScript Section Start  
+                            ========================================  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <!-- <script src="js/js2.js"></script> -->
+    <!-- 2. script for slide bar -->
+
+    <script>
+        let slide = document.querySelectorAll('.slide');
+        var current = 0;
+
+        function cls() {
+            for (let i = 0; i < slide.length; i++) {
+                slide[i].style.display = 'none';
+            }
+        }
+
+        function next() {
+            cls();
+            if (current === slide.length - 1) current = -1;
+            current++;
+
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function () {
+                x += 0.1;
+                slide[current].style.opacity = x;
+                if (x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+
+        }
+
+        function prev() {
+            cls();
+            if (current === 0) current = slide.length;
+            current--;
+
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function () {
+                x += 0.1;
+                slide[current].style.opacity = x;
+                if (x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+
+        }
+
+        function start() {
+            cls();
+            slide[current].style.display = 'block';
+        }
+        start();
+    </script>
+    <script>
+        const carousel = document.querySelector(".carousel"),
+            firstImg = carousel.querySelectorAll("img")[0];
+        arrowIcons = document.querySelectorAll(".wapper i");
+
+        let isDragStart = false, isDragging = false, prevPageX, prevScrolleft, positionDiff;
+        let firstImgWidth = firstImg.clientWidth + 14; //get first img width & add 14margin value 
+        arrowIcons.forEach(icon => {
+            icon.addEventListener("click", () => {
+                //if check icon is left reduce width value from the carouselscroll left else add to eat
+                carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth
+                setTimeout(() => showHideIcons(), 60) //call hidden icon in 60ms
+            });
+        });
+        const dragStart = (e) => {
+            // update the globel variables value on mouse down event    
+            isDragStart = true;
+            prevPageX = e.pageX;
+            prevScrolleft = carousel.scrollLeft;
+        }
+
+        const dragging = (e) => {
+            // scroll images /carousel to left accoding to mouse pointer 
+            if (!isDragStart) return;
+            e.preventDefault();
+
+
+            //scrollLeft return the nunber of pixel an element content scroll horizontel
+            // pageX return the horizontel cooridinate of mouse while
+            let positionDiff = e.pageX - prevPageX;
+            // carousel.scrollLeft = prevScrolleft - positionDiff;
+            // showHideIcons()
+        }
+
+        const dragStop = () => {
+            isDragStart = false;
+            // carousel.classList.remove("dragging")
+            // if (isDragging) return;
+            // isDragging = false;
+            autoSlide();
+
+        }
+
+        const autoSlide = () => {
+
+            if (carousel.scrollLeft == (carousel.scrolWidth - carousel.clientWidth)) return;
+            // get different value  that needs to add and reduce carousel left to take middel img center
+            positionDiff = Math.abs(positionDiff);
+            let firstImgWidth = firstImg.clientWidth + 14;
+            let valDifference = firstImgWidth - positionDiff
+            if (carousel.scrollLeft > prevScrolleft) {
+                //logic for this line 
+                // return carousel.scrollLeft += positionDiff > firstImgWidth /3 ? valDifference : - positionDiff // scroling to the right 
+
+                //  if you didn't understand ternary if else 
+                // you can write like this too. Both do same
+
+                //  if(positionDiff > firstImgWidth / 3)
+                //   {
+                //      carousel.scrollLeft += valDifference; 
+                //     }
+                //      else {
+                //         carousel.scrollLeft positionDiff ;
+                //     }
+
+
+                return carousel.scrollLeft += positionDiff > firstImgWidth / 4 ? valDifference : - positionDiff // scroling to the right 
+            }
+            carousel.scrollLeft -= positionDiff > firstImgWidth / 4 ? valDifference : - positionDiff // scroling to left
+
+
+        }
+
+        carousel.addEventListener("mousedown", dragStart)
+        carousel.addEventListener("touchstart", dragStart)
+
+
+        carousel.addEventListener("mousemove", dragging)
+        carousel.addEventListener("touchmove", dragging)
+
+
+        carousel.addEventListener("mouseup", dragStop)
+        carousel.addEventListener("mouseleave", dragStop)
+        carousel.addEventListener("touchend", dragStop)
+
+    </script>
+
+</body>
+
+</html>

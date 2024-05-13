@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <title>GPmainpageresponsive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            position: absolute;
+            left: 45%;
+            top: 25%;
+        }
+
+        body {
+            background-color: bisque;
+            overflow-x: hidden;
+        }
+
+        h4 {
+            position: absolute;
+            top: 17px;
+            left: 15px;
+        }
+
+        #navbar {
+
+            margin: auto;
+            padding: 10px 0;
+            position: absolute;
+            top: 10px;
+
+        }
+
+
+        #navbar ul li {
+
+            list-style-type: none;
+            margin: 0 10px;
+            display: inline;
+            position: relative;
+            right: 10%;
+        }
+
+        #navbar ul li a {
+            color: #31708e;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        #navbar ul li a:hover {
+            color: #687864;
+        }
+
+
+        #navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: #687864;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        #navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        .swiper {
+            width: 100vw;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            position: relative;
+            top: 5vh;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 500px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+
+        .allcardholder .card {
+            height: 500px;
+            background-color: aqua;
+            background-size: contain;
+            border-radius: 20px;
+            z-index: 1;
+        }
+
+        .image img {
+            border-radius: 10px;
+            height: 200px;
+            width: 250px;
+            position: relative;
+            top: 15px;
+            left: 10%;
+        }
+
+        .text {
+            position: relative;
+            top: 20px;
+            font-size: 30px;
+            font-weight: bolder;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .info {
+            position: relative;
+            top: 20px;
+            left: 0px;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            text-align: justify;
+        }
+
+        .btn {
+            width: 150px;
+            padding: 5px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid black;
+            background: transparent;
+            color: black;
+            cursor: pointer;
+            position: relative;
+            top: 20px;
+            left: 70px;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .btn:hover {
+            color: whitesmoke;
+        }
+
+        .btn a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        span {
+            background: black;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        .card {
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        button:hover span {
+            width: 100%;
+        }
+
+        button:hover {
+            border: none;
+        }
+
+        #card1 {
+            background-image: url("https://i.pinimg.com/564x/d5/e0/e0/d5e0e0d34d2bb30782eef2b4a23a26c0.jpg");
+        }
+
+        #card2 {
+            background-image: url('https://i.pinimg.com/474x/af/ae/de/afaede8c2840c87cdd30e2e1ab32ce04.jpg');
+        }
+
+        #card3 {
+            background-image: url('https://i.pinimg.com/474x/c0/e2/55/c0e255ee8433742d6f3ec5acff36f47a.jpg');
+        }
+
+        #card4 {
+            background-image: url("https://i.pinimg.com/564x/8a/25/8c/8a258ca1dac8974bdeba4484b8d81d2a.jpg");
+        }
+
+        #card5{
+            background-image: url("https://i.pinimg.com/736x/13/f0/8c/13f08ce3f328678ead15cb6edea460d1.jpg");
+        }
+
+        #black {
+            color: #000;
+        }
+
+        #white{
+            color: #fff;
+        }
+
+        .main-img img {
+            height: 60vh;
+            width: 100vw;
+            margin: auto;
+        }
+
+        @media screen and (max-width:650px) {
+
+            .main-img img {
+                height: 60vh;
+                width: 120vw;
+            }
+
+
+        }
+
+        @media (min-width: 650px) and (max-width:750px) {
+
+
+            .main-img img {
+                height: 60vh;
+                width: 100vw;
+            }
+
+
+        }
+
+        @media (min-width:750px) and (max-width:950px) {
+
+
+            .main-img img {
+                height: 60vh;
+                width: 105vw;
+            }
+        }
+
+        @media (min-width: 950px) and (max-width: 1300px) {
+
+
+            .main-img img {
+                height: 60vh;
+                width: 100vw;
+            }
+        }
+
+        @media (min-width: 1300px) and (max-width: 1900px) {
+
+            .main-img img {
+                height: 60vh;
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> GUJARAT પરિભ્રમણ</h1>
+    <div class="main-img">
+        <img src="./GPImages/somnath-temple-banner.jpg" alt="">
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card" id="card1">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/236x/cb/f7/8f/cbf78fbee9fc7ad9bd1d9347d5450d8d.jpg" alt="">
+                    </div>
+                    <div class="text" id="black">
+                        KUTCH
+                    </div>
+                    <div class="info">
+                        Kutch district is a district of Gujarat state in western India, with its headquarters at Bhuj.
+                        Covering
+                        an
+                        area of 45,674 km², it is the largest district of India.
+                    </div>
+                    <div>
+                        <a href="./html/GPkutchresponsive.html" target="_blank"><button class="btn"> <span class="span"></span>
+                                VISIT FOR MORE </button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card" id="card2">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/474x/50/c8/f3/50c8f3a8e04f231de1202170dcdb74ec.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        AHMEDABAD
+                    </div>
+                    <div class="info">
+                        Ahmedabad is the most populous city in the Indian state of Gujarat. It is the administrative
+                        headquarters of
+                        the Ahmedabad district and the seat of the Gujarat High Court.
+                    </div>
+                    <div>
+                        <a href="./html/GPahmedabadresponsive.html" target="_blank"><button class="btn"> <span class="span"></span>
+                                VISIT FOR
+                                MORE</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card" id="card3">
+
+                    <div class="image">
+                        <img src="https://i.pinimg.com/474x/9b/bc/01/9bbc011213cfbf92cc8b756be5b5f436.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        VADODARA
+                    </div>
+                    <div class="info">
+                        Vadodara, also known as Baroda, is the second largest city in the Indian state of Gujarat.
+                    </div>
+                    <div>
+                        <a href="./html/GPvadodararesponsive.html" target="_blank"><button class="btn"> <span class="span"></span>
+                                VISIT FOR
+                                MORE</button></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card" id="card4">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/474x/d2/a2/07/d2a207adb0f21fc55aa45280873ff610.jpg" alt="">
+                    </div>
+                    <div class="text" id="black">
+                        JUNAGADH
+                    </div>
+                    <div class="info">
+                        Junagadh is the headquarters of Junagadh district in the Indian state of Gujarat. Located at the
+                        foot of
+                        the
+                        Girnar hills, 355 kilometres southwest of Ahmedabad and Gandhinagar, it is the seventh largest
+                        city in
+                        the
+                        state.
+                    </div>
+                    <div>
+                        <a href="./html/GPjunagadhresponsive.html" target="_blank"><button class="btn"> <span class="span"></span>
+                                VISIT FOR MORE
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card" id="card5">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/564x/65/1f/6b/651f6ba21af2596c9ec18b73b9953b4c.jpg" alt="">
+                    </div>
+                    <div class="text" >
+                        Surat
+                    </div>
+                    <div class="info" id="white">
+                        Surat is a large city beside the Tapi River in the west Indian state of Gujarat. Once known
+                        for silk weaving, Surat remains a commercial center for textiles, and the New Textile Market
+                        area is lined with fabric shops.
+                    </div>
+                    <div>
+                        <a href="./html/GPSuratresponsive.html" target="_blank"
+                        ><button class="btn"> <span class="span"></span>
+                                VISIT FOR MORE
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 2,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        // Custom script for pagination on hover
+        var pagination = document.querySelector('.swiper-pagination');
+
+        swiper.on('mouseenter', function () {
+            pagination.style.opacity = '1';
+        });
+
+        swiper.on('mouseleave', function () {
+            pagination.style.opacity = '0';
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+img {
+    height: 75vh;
+    width: 100vw;
+}
+
+.mainimage h1{
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+}
+
+#heading1 {
+    position: relative;
+    left: 100px;
+    font-size: 2rem;
+    top: 5px;
+}
+
+#heading2 {
+    position: relative;
+    left: 100px;
+    font-size: 2rem;
+    top: 10px;
+
+}
+
+.content #p1 {
+    font-size: 1.5rem;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.content #p2 {
+    font-size: 1.5rem;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.content #p3 {
+    font-size: 1.5rem;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#heading3 {
+    position: relative;
+    left: 100px;
+    font-size: 2rem;
+    top: 5px;
+}
+
+
+.gallery img {
+    height: 250px;
+    width: 250px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    top: 10px;
+}
+
+@media (max-width:1600px) and (min-width:1000px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width:1000px) and (min-width:800px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+}
+@media (max-width:800px) and (min-width:400px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: auto auto ;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:400px)  {
+    .gallery{
+        display: grid;
+        grid-template-columns: auto ;
+        justify-content: center;
+    }
+}
+
+.footer {
+    height: 1000px;
+}
+
+.fullscreen{
+    margin: auto;
+    width: 79vw;
+}
